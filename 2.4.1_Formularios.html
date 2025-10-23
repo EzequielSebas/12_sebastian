@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario basico</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Formulario basico</h1>
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe favorito</label>
+            <br>
+        <select name="Superheroe" id="Superheroe">
+            <option value="">-------</option>
+            <optgroup label="Elige un Super heroe">
+                <option value="Superman">Superman</option>
+                <option value="Spiderman">Spiderman</option>
+                <option value="Flash">Flash</option>
+            </optgroup>
+        </select>
+        <br>
+            <label>Color</label>
+            <br>
+            <input type="color">
+        </fieldset>
+    </form>
+    <form action="procesar.php" method="post">
+        <fieldset>
+        <legend>Datos de alumno</legend>
+            <label>Nombre</label>
+            <br>
+            <input type="text" name="Nombre">
+            <br>
+            <label>Telefono</label>
+            <br>
+            <input type="Numero" name="Telefono">
+            <label>Formato: +34 --- -- -- --</label>
+        </fieldset>
+            <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
