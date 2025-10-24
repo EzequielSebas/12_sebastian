@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario basico</title>
+    <meta charset="UTF-8">
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        input[type=submit],
+        button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+
+        button[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+
+        *:required {
+            border-color: gold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Formulario basico</h1>
+    <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe favorito</label>
+
+            <input type="Superheroe" name="Superheroe" placeholder="Elige Superheroe">
+
+            <label>Color</label>
+
+            <input type="color">
+        </fieldset>
+    </form>
+    <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Nombre</label>
+            <input type="text" name="Nombre" placeholder="Nombre Y Apellido">
+            <label>Telefono</label>
+            <input type="Numero" name="Telefono">
+            <label>Formato: 9999999</label>
+            <label>Fecha:</label>
+            <input type="date" name="Fecha">
+            <label>Contraseña</label>
+            <input type="password" name="Contraseña">
+        </fieldset>
+    </form>
+    <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Selecciona forma de contacto preferida:</legend>
+            <input type="radio" name="Contacto" value="Email"> Email
+            <input type="radio" name="Contacto" value="Telefono"> Telefono
+            <input type="radio" name="Contacto" value="Carta"> Carta
+        </fieldset>
+    </form>
+    <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Elige tus asignaturas favoritas:</legend>
+            <input type="checkbox" name="Aficion" value="asignatura"> Aplicaciones Web
+            <br>
+            <input type="checkbox" name="Aficion" value="asignatura"> Seguridad Informatica
+        </fieldset>
+    </form>
+    <form action="mailto:sonia.curielfidalgo@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Formulario de campos no usados anteriormente:</legend>
+            <input type="number" name="number">
+            <br>
+            <input type="range" name="range" min="0" max="5">
+            <br>
+            <input type="button" name="button" value="button">
+            <br>
+            <input type="file" accept="image/* or text/*" name="file" />
+            <br>
+            <input type="month" name="month" />
+        </fieldset>
+    </form>
+    <input type="submit" value="Enviar">
+    <button type="reset" name="reset">Resetear</button>
+</body>
+
+</html>
