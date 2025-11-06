@@ -1,0 +1,29 @@
+html
+
+<style>
+        /*CSS*/
+        h1 {
+            color: aquamarine;
+        }
+
+        h2 {
+            color: purple;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        code {
+            color: blue;
+        }
+
+        span {
+            color: black;
+            font-style: normal;
+        }
+
+        ol {
+            font-style: normal;
+        }
+</style>
