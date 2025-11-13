@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Grid layout Tarea</title>
+    <style>
+        html, body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .cuadricula {
+            display: grid;
+            grid-template-rows: 25% 50% 25%;
+            grid-template-columns: 50% 25% 25%;
+            grid-template-areas: 
+            "header header header header"
+            "main main . aside"
+            "footer footer footer footer"
+            ;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: aqua;
+        }
+        main {
+            grid-area: main;
+            background-color: yellow;
+        }
+        aside {
+            grid-area: aside;
+            background-color: purple;
+        }
+        footer {
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cuadricula">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            <h1>Main</h1>
+        </main>
+        <aside><h1>Aside</h1></aside>
+        <footer><h1>Footer</h1></footer>
+    </div>
+</body>
+
+</html>
